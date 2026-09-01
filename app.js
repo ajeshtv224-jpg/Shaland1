@@ -8,7 +8,7 @@ function render(){
  const count=document.getElementById("resultCount"); if(count) count.textContent=`${list.length} result${list.length===1?"":"s"}`;
  const grid=document.getElementById("all-products");
  if(grid) grid.innerHTML=list.map(p=>`<article class="card">
- <a href="product.html?id=${p.id}"><div class="product-image"><img src="${p.image}" alt="${p.name}" loading="lazy"><span class="badge">${p.badge}</span></div></a>
+ <a href="product.html?id=${p.id}"><div class="product-image"><img src="${p.image}" alt="${p.name}" loading="eager"><span class="badge">${p.badge}</span></div></a>
  <h3>${p.name}</h3><div class="stars">${stars(p.rating)} <span class="muted">${p.rating}/5</span></div>
  <p class="muted">${p.description}</p><div class="card-bottom"><span class="price">${p.price}</span><a class="deal" href="${p.affiliateUrl}" target="_blank" rel="nofollow sponsored noopener">Check price ↗</a></div></article>`).join("")||"<p>No products found. Try another search.</p>";
  const cb=document.getElementById("compareBody");

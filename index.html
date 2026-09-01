@@ -1,35 +1,86 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="SHALAND — product reviews, buying guides, comparisons and affiliate deals.">
-<meta name="robots" content="index,follow"><meta name="theme-color" content="#635bff">
-<title>SHALAND — Better Products. Smarter Choices.</title>
-<link rel="canonical" href="https://example.github.io/shaland/">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SHALAND — curated product picks, honest comparisons, buying guides and affiliate deals.">
+<meta name="theme-color" content="#6d5dfc">
+<link rel="canonical" href="https://ajeshtv224-jpg.github.io/Shaland1/">
+<title>SHALAND — Smart Finds. Better Choices.</title>
 <link rel="stylesheet" href="styles.css">
-</head><body>
-<header class="header"><div class="wrap nav"><a class="logo" href="index.html">Smart<span>Picks</span></a>
-<nav id="nav"><a href="#shop">Shop</a><a href="#compare">Compare</a><a href="#guides">Guides</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
-<div class="navActions"><button class="theme" onclick="toggleTheme()">◐</button><button class="hamb" onclick="toggleNav()">☰</button></div></div></header>
+</head>
+<body>
+<div class="announcement">✨ New picks every week · <a href="#deals">See today's deals</a></div>
+<header class="header">
+  <div class="wrap nav">
+    <a class="logo" href="index.html">SHA<span>LAND</span></a>
+    <nav id="nav"><a href="#shop">Shop</a><a href="#deals">Deals</a><a href="#compare">Compare</a><a href="guides.html">Guides</a><a href="about.html">About</a></nav>
+    <div class="nav-tools"><button aria-label="Search" onclick="focusSearch()">⌕</button><button aria-label="Dark mode" onclick="toggleTheme()">◐</button><button class="menu" onclick="toggleNav()">☰</button></div>
+  </div>
+</header>
+
 <main>
-<section class="hero"><div class="wrap heroGrid"><div><span class="eyebrow">CURATED • COMPARED • DISCLOSED</span>
-<h1>Find products worth <span>your money.</span></h1><p>Clear buying guides, quick comparisons and carefully selected deals — without the endless scrolling.</p>
-<div class="actions"><a class="btn primary" href="#shop">Explore picks</a><a class="btn ghost" href="guides.html">Read guides</a></div>
-<div class="proof"><span>✓ Practical recommendations</span><span>✓ Price-aware picks</span><span>✓ Affiliate links disclosed</span></div></div>
-<div class="heroArt"><div class="glow"></div><div class="heroProduct"><span>EDITOR'S PICK</span><strong>🎧</strong><b>Premium Wireless Headphones</b><small>Our standout audio pick</small><em>$129</em><a class="deal" href="product.html?id=1">See review →</a></div><div class="floatCard one">⭐ 4.8/5</div><div class="floatCard two">🔥 Best Seller</div></div></div></section>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">SHALAND / PRODUCT DISCOVERY</span>
+      <h1>Buy less.<br><span>Choose better.</span></h1>
+      <p>Hand-picked products, quick comparisons and practical buying guides — made to help you decide faster.</p>
+      <div class="hero-actions"><a class="btn primary" href="#shop">Explore picks</a><a class="btn secondary" href="guides.html">Read guides</a></div>
+      <div class="trust"><span>✓ Curated picks</span><span>✓ Clear pros & cons</span><span>✓ Affiliate links disclosed</span></div>
+    </div>
+    <div class="hero-showcase">
+      <div class="orb"></div>
+      <div class="showcase-card">
+        <div class="mini-label">FEATURED PICK</div>
+        <div class="showcase-icon">🎧</div>
+        <div class="showcase-title">Nova Pro Headphones</div>
+        <div class="rating">★★★★★ <b>4.8</b></div>
+        <div class="showcase-bottom"><strong>₹10,999</strong><a href="product.html?id=1">View pick →</a></div>
+      </div>
+      <div class="pill top">⭐ 4.8 / 5</div><div class="pill bottom">🔥 Editor's Pick</div>
+    </div>
+  </div>
+</section>
 
-<section class="wrap" id="shop"><div class="sectionTitle"><span class="eyebrow">SHOP SMART</span><h2>Browse our picks</h2></div>
-<div class="categoryGrid"><button onclick="setCat('all')">✨ <b>All</b><small>Everything</small></button><button onclick="setCat('tech')">💻 <b>Tech</b><small>Gadgets & audio</small></button><button onclick="setCat('home')">🏠 <b>Home</b><small>Useful essentials</small></button><button onclick="setCat('fitness')">🏃 <b>Fitness</b><small>Workout gear</small></button><button onclick="setCat('style')">🎒 <b>Style</b><small>Daily carry</small></button></div>
-<div class="toolbar"><div><h2 id="resultsTitle">All products</h2><small id="resultCount"></small></div><input id="search" class="search" placeholder="Search products…" oninput="render()"></div>
-<div id="productGrid" class="productGrid"></div></section>
+<section class="wrap stats">
+  <div><strong>6+</strong><span>starter picks</span></div><div><strong>4</strong><span>categories</span></div><div><strong>100%</strong><span>transparent links</span></div><div><strong>1</strong><span>simple mission</span></div>
+</section>
 
-<section class="darkSection" id="compare"><div class="wrap"><div class="sectionTitle"><span class="eyebrow">SIDE BY SIDE</span><h2>Quick comparison</h2></div>
-<div class="tableWrap"><table><thead><tr><th>Product</th><th>Best for</th><th>Rating</th><th>Price</th><th></th></tr></thead><tbody id="compareBody"></tbody></table></div></div></section>
+<section class="wrap" id="shop">
+  <div class="section-head"><div><span class="eyebrow">SHOP SMART</span><h2>Featured picks</h2></div><a class="text-link" href="#all-products">View all →</a></div>
+  <div class="category-tabs">
+    <button class="active" onclick="setCat('all',this)">All</button><button onclick="setCat('tech',this)">💻 Tech</button><button onclick="setCat('home',this)">🏠 Home</button><button onclick="setCat('fitness',this)">🏃 Fitness</button><button onclick="setCat('style',this)">🎒 Style</button>
+  </div>
+  <div class="search-row"><div><b id="resultsTitle">All picks</b><small id="resultCount"></small></div><div class="searchbox">⌕<input id="search" oninput="render()" placeholder="Search products…"><button onclick="clearSearch()">×</button></div></div>
+  <div id="all-products" class="product-grid"></div>
+</section>
 
-<section class="wrap" id="guides"><div class="sectionTitle"><span class="eyebrow">BUYING GUIDES</span><h2>Make better buying decisions</h2></div>
-<div class="guideGrid"><article><div>🔎</div><h3>What should you look for?</h3><p>Focus on the features that actually change the experience, not marketing jargon.</p><a href="guides.html#how-to-choose">Read guide →</a></article>
-<article><div>⚖️</div><h3>Compare before buying</h3><p>See the important differences between popular choices in seconds.</p><a href="#compare">Compare now →</a></article>
-<article><div>💰</div><h3>Find value</h3><p>A lower price isn't always better. We highlight the trade-offs that matter.</p><a href="guides.html#value">Learn more →</a></article></div></section>
+<section class="deal-strip" id="deals">
+  <div class="wrap deal-inner"><div><span class="eyebrow">DEAL RADAR</span><h2>Don't overpay for the right product.</h2><p>Check current retailer prices before you buy. Prices and availability can change.</p></div><a class="btn light" href="#shop">Browse picks →</a></div>
+</section>
 
-<section class="wrap newsletter"><div><span class="eyebrow">WEEKLY PICKS</span><h2>Useful finds, occasionally.</h2><p>New product discoveries and standout deals. No spam.</p></div><form onsubmit="subscribe(event)"><input id="email" type="email" required placeholder="Email address"><button class="btn primary">Subscribe</button></form><small id="message"></small></section>
+<section class="wrap" id="compare">
+  <div class="section-head"><div><span class="eyebrow">QUICK COMPARISON</span><h2>See the difference</h2></div></div>
+  <div class="compare-wrap"><table><thead><tr><th>Product</th><th>Best for</th><th>Rating</th><th>Price</th><th></th></tr></thead><tbody id="compareBody"></tbody></table></div>
+</section>
+
+<section class="wrap guides-preview">
+  <div class="section-head"><div><span class="eyebrow">BUYING GUIDES</span><h2>Before you buy</h2></div><a class="text-link" href="guides.html">All guides →</a></div>
+  <div class="guide-grid">
+    <article><span class="guide-number">01</span><h3>How to choose tech</h3><p>Ignore the noise and focus on features that actually change your experience.</p><a href="guides.html#tech">Read guide →</a></article>
+    <article><span class="guide-number">02</span><h3>How to find value</h3><p>The lowest price isn't always the lowest cost. Learn what to compare.</p><a href="guides.html#value">Read guide →</a></article>
+    <article><span class="guide-number">03</span><h3>Spot a good deal</h3><p>Use price, warranty, returns and long-term usefulness to judge a deal.</p><a href="guides.html#deals">Read guide →</a></article>
+  </div>
+</section>
+
+<section class="wrap newsletter">
+  <div><span class="eyebrow">SHALAND LETTER</span><h2>Good finds. No daily spam.</h2><p>Get occasional product discoveries and useful buying tips.</p></div>
+  <form onsubmit="subscribe(event)"><input id="email" type="email" required placeholder="Your email address"><button class="btn primary">Join free</button></form>
+  <small id="message"></small>
+</section>
 </main>
-<footer><div class="wrap footerTop"><div><a class="logo" href="index.html">Smart<span>Picks</span></a><p>Better products. Smarter choices.</p></div><div class="links"><a href="about.html">About</a><a href="guides.html">Guides</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="disclosure.html">Disclosure</a></div></div><div class="wrap copyright">© 2026 SHALAND. Prices and availability may change. <a href="disclosure.html">Affiliate disclosure</a>.</div></footer>
-<script src="products.js"></script><script src="app.js"></script></body></html>
+
+<footer><div class="wrap footer-grid"><div><a class="logo" href="index.html">SHA<span>LAND</span></a><p>Smart finds. Better choices.</p></div><div><b>Explore</b><a href="#shop">Shop</a><a href="#compare">Compare</a><a href="guides.html">Guides</a></div><div><b>Company</b><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="disclosure.html">Disclosure</a></div></div><div class="wrap copyright">© 2026 SHALAND · Affiliate links may earn us a commission at no extra cost to you.</div></footer>
+<script src="products.js"></script><script src="app.js"></script>
+</body></html>

@@ -1,30 +1,33 @@
-# SHALAND V4
+# SHALAND V5
 
-GitHub Pages-ready affiliate site starter.
+A polished static affiliate-marketing website for GitHub Pages.
 
-## V4 features
-- SEO-ready title/description/canonical/robots starter
-- Product catalogue in one `products.js` file
-- Product review pages using `product.html?id=PRODUCT_ID`
+## V5 upgrades
+- New SHALAND branding
+- Premium responsive visual design
+- Featured product cards
+- Category filters + search
+- Individual product review pages
+- Pros, cons and verdict sections
+- Quick comparison table
+- Deal Radar section
 - Buying guides
-- Search and category filters
-- Comparison table
 - Dark mode
-- Responsive mobile design
-- Affiliate disclosure and privacy pages
-- robots.txt + sitemap.xml starter
-- Custom 404 page
+- SEO starter metadata
+- Canonical URL for the current GitHub Pages site
+- robots.txt + sitemap.xml
+- Affiliate disclosure + privacy starter pages
+- Mobile navigation
+- Newsletter UI placeholder
 
-## Before launch
-1. Replace `https://example.github.io/shaland/` with your actual GitHub Pages URL or custom domain in `index.html`, `robots.txt` and `sitemap.xml`.
-2. Replace every `https://example.com/affiliate-*` with your real affiliate URLs.
-3. Replace `your-email@example.com`.
-4. Replace starter product images/content with products you are actually allowed to promote.
-5. Customize privacy/disclosure pages for your real tools and affiliate programs.
+## IMPORTANT BEFORE LAUNCH
+1. In `products.js`, replace all `https://example.com/affiliate-*` links with your real affiliate links.
+2. Replace `Add retailer` with the actual retailer/network name.
+3. Replace `your-email@example.com` with your real email.
+4. Review and customize `privacy.html` for the services you actually use.
+5. Do not use product images/content unless you have the right to use them.
 6. Connect the newsletter form to a real email provider before collecting emails.
+7. Verify affiliate-program disclosure and link requirements for every network you join.
 
-## Product editing
-Open `products.js`. Each product contains name, category, price, image, description, affiliate URL, pros, cons and verdict. Add another object to create another product.
-
-## GitHub Pages
-Upload all files to the repository root and publish from the `main` branch/root. Keep `index.html` at the root.
+## Updating GitHub
+Replace the existing files in your repository with these V5 files, commit the changes, and GitHub Pages should redeploy automatically.

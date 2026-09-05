@@ -1,13 +1,229 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Read the SHALAND review, pros, cons, rating and buying verdict before choosing this product.">
-<title>Product Review — SHALAND</title><link rel="stylesheet" href="styles.css"></head><body><main class="wrap product-page"><a class="logo" href="index.html">SHA<span>LAND</span></a><div id="detail"></div></main><script src="products.js"></script><script>
-const id=new URLSearchParams(location.search).get("id"),p=PRODUCTS.find(x=>x.id==id)||PRODUCTS[0];document.title=p.name+" Review — SHALAND";
-document.getElementById("detail").innerHTML=`<div class="eyebrow" style="margin-top:55px">SHALAND REVIEW / ${p.category.toUpperCase()}</div>
-<h1 style="font-size:clamp(2.7rem,7vw,5rem);line-height:.95;letter-spacing:-.07em;margin:12px 0 25px">${p.name}</h1>
-<div class="product-image" style="height:430px"><img src="${p.image}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover"><span class="badge">${p.badge}</span></div>
-<div style="display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin:24px 0"><strong style="font-size:1.5rem">${p.price}</strong><span class="stars">${"★".repeat(Math.round(p.rating))} ${p.rating}/5</span><span class="muted">Best for: ${p.bestFor}</span></div>
-<p style="font-size:1.15rem;max-width:800px">${p.description}</p>
-<div class="guide-grid" style="margin:35px 0"><article><span class="guide-number">01</span><h3>Pros</h3><p>${p.pros.map(x=>"✓ "+x).join("<br>")}</p></article><article><span class="guide-number">02</span><h3>Consider</h3><p>${p.cons.map(x=>"• "+x).join("<br>")}</p></article><article><span class="guide-number">03</span><h3>Our verdict</h3><p>${p.verdict}</p></article></div>
-<a class="btn primary" href="${p.affiliateUrl}" target="_blank" rel="nofollow sponsored noopener">Check current price ↗</a>
-<p class="muted" style="margin-top:28px">Affiliate disclosure: SHALAND may earn a commission from qualifying purchases at no extra cost to you. Prices, stock and specifications can change; confirm current details at the retailer.</p>
-<a href="index.html#shop" style="display:inline-block;margin-top:10px;color:#6d5dfc;font-weight:900">← Back to picks</a>`;
-</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Read the SHALAND review, pros, cons, rating and buying verdict before choosing this product.">
+<title>Product Review — SHALAND</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<main class="wrap product-page">
+
+<a class="logo" href="index.html">SHA<span>LAND</span></a>
+
+<div id="detail"></div>
+
+</main>
+
+<script src="products.js"></script>
+
+<script>
+
+const id = new URLSearchParams(location.search).get("id");
+const p = PRODUCTS.find(x => x.id == id) || PRODUCTS[0];
+
+document.title = p.name + " Review — SHALAND";
+
+const isProduct11 = p.id == 11;
+
+const galleryImages = [
+  "images/indo-western-maxi-dress-1.jpg",
+  "images/indo-western-maxi-dress-2.jpg",
+  "images/indo-western-maxi-dress-3.jpg",
+  "images/indo-western-maxi-dress-4.jpg",
+  "images/indo-western-maxi-dress-5.jpg",
+  "images/indo-western-maxi-dress-6.jpg"
+];
+
+const imageSection = isProduct11
+? `
+<div class="product-gallery">
+
+  <div class="gallery-main">
+    <img id="mainProductImage"
+         src="${galleryImages[0]}"
+         alt="${p.name}">
+    <span class="badge">${p.badge}</span>
+  </div>
+
+  <div class="gallery-thumbnails">
+
+    ${galleryImages.map((img,index)=>`
+      <button class="gallery-thumb ${index === 0 ? "active" : ""}"
+              onclick="changeProductImage('${img}', this)">
+        <img src="${img}" alt="${p.name} view ${index+1}">
+      </button>
+    `).join("")}
+
+  </div>
+
+</div>
+`
+: `
+<div class="product-image" style="height:430px">
+  <img src="${p.image}"
+       alt="${p.name}"
+       style="width:100%;height:100%;object-fit:cover">
+  <span class="badge">${p.badge}</span>
+</div>
+`;
+
+document.getElementById("detail").innerHTML = `
+
+<div class="eyebrow" style="margin-top:55px">
+SHALAND REVIEW / ${p.category.toUpperCase()}
+</div>
+
+<h1 style="font-size:clamp(2.7rem,7vw,5rem);line-height:.95;letter-spacing:-.07em;margin:12px 0 25px">
+${p.name}
+</h1>
+
+${imageSection}
+
+<div style="display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin:24px 0">
+
+<strong style="font-size:1.5rem">
+${p.price}
+</strong>
+
+<span class="stars">
+${"★".repeat(Math.round(p.rating))} ${p.rating}/5
+</span>
+
+<span class="muted">
+Best for: ${p.bestFor}
+</span>
+
+</div>
+
+<p style="font-size:1.15rem;max-width:800px">
+${p.description}
+</p>
+
+<div class="guide-grid" style="margin:35px 0">
+
+<article>
+<span class="guide-number">01</span>
+<h3>Pros</h3>
+<p>${p.pros.map(x=>"✓ "+x).join("<br>")}</p>
+</article>
+
+<article>
+<span class="guide-number">02</span>
+<h3>Consider</h3>
+<p>${p.cons.map(x=>"• "+x).join("<br>")}</p>
+</article>
+
+<article>
+<span class="guide-number">03</span>
+<h3>Our verdict</h3>
+<p>${p.verdict}</p>
+</article>
+
+</div>
+
+<a class="btn primary"
+   href="${p.affiliateUrl}"
+   target="_blank"
+   rel="nofollow sponsored noopener">
+Check current price ↗
+</a>
+
+<p class="muted" style="margin-top:28px">
+Affiliate disclosure: SHALAND may earn a commission from qualifying purchases at no extra cost to you. Prices, stock and specifications can change; confirm current details at the retailer.
+</p>
+
+<a href="index.html#shop"
+   style="display:inline-block;margin-top:10px;color:#6d5dfc;font-weight:900">
+← Back to picks
+</a>
+
+`;
+
+function changeProductImage(image, button) {
+
+  document.getElementById("mainProductImage").src = image;
+
+  document.querySelectorAll(".gallery-thumb")
+    .forEach(btn => btn.classList.remove("active"));
+
+  button.classList.add("active");
+}
+
+</script>
+
+<style>
+
+.product-gallery {
+  width:100%;
+}
+
+.gallery-main {
+  position:relative;
+  height:430px;
+  overflow:hidden;
+  border-radius:20px;
+  background:#f5f5f5;
+}
+
+.gallery-main img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:opacity .2s ease;
+}
+
+.gallery-thumbnails {
+  display:flex;
+  gap:12px;
+  margin-top:14px;
+  overflow-x:auto;
+  padding-bottom:5px;
+}
+
+.gallery-thumb {
+  flex:0 0 82px;
+  width:82px;
+  height:82px;
+  padding:0;
+  border:2px solid transparent;
+  border-radius:12px;
+  overflow:hidden;
+  background:#f5f5f5;
+  cursor:pointer;
+}
+
+.gallery-thumb img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.gallery-thumb.active {
+  border-color:#6d5dfc;
+}
+
+@media (max-width:600px) {
+
+  .gallery-main {
+    height:360px;
+    border-radius:16px;
+  }
+
+  .gallery-thumb {
+    flex-basis:68px;
+    width:68px;
+    height:68px;
+  }
+
+}
+
+</style>
+
+</body>
+</html>

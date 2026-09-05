@@ -22,5 +22,29 @@ const PRODUCTS=[
 
 {id:9,name:"Milton Xpress Egg Boiler",category:"home",bestFor:"Quick breakfast & everyday kitchen use",rating:4.4,price:"Check current price",badge:"Kitchen Pick",image:"images/619RCyUhgcL._SL1500_.jpg",description:"Compact automatic egg boiler designed for quick and convenient egg preparation at home.",affiliateUrl:"https://www.amazon.in/Automatic-Steamer-Boiling-Compact-Warranty/dp/B0FKB9WFLJ?crid=2K9SVZ686F066&dib=eyJ2IjoiMSJ9.XHKkNvXK7FFcHOGvHZ4XFypzT56GIxojDQVuf4_NODxKnmuwX0QVIxXyS5dPQT1wE70eYZ79n8k3_y6NMbH-S9q81R7Gys4U8O_mXHRYuU7dB3zU8WdMHSo9Z83r5OkyAE0rT_xJBShJtOrSrzSlAp36qrSo4wKMU1CyLebIJuUAbDj7rzahO3X4vvT1wfAOSUExXd7NL3HexjuoBwavGq3ljOC1OXj8pTrgXW8j6hw.qdQrMR_s3CaQCVz1FWuSTLe53kdNwiNIpzdEsfW0r4A&dib_tag=se&keywords=Electric%2Begg%2Bboiler&qid=1788533925&sprefix=electric%2Begg%2Bboiler%2Caps%2C437&sr=8-5-spons&aref=NmEKBGJ2ha&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=shaland-21&linkId=7958282f2944d059620ea0e5b4a721a1&ref_=as_li_ss_tl",pros:["Automatic operation","Compact design","Quick egg preparation","Easy everyday use"],cons:["Capacity is limited compared with larger cookers"],verdict:"A practical kitchen gadget for quickly preparing eggs with minimal effort.",retailer:"Amazon"},
 
-{id:10,name:"HashWOW Levitating Moon Lamp",category:"home",bestFor:"Bedroom ambience & decor",rating:4.0,price:"Check current price",badge:"✨ Trending Pick",image:"images/levitating-moon-lamp.jpg",description:"Bring a magical glow to your room with this eye-catching moon lamp. Its moon-inspired design creates a warm, cozy ambience for bedrooms, desks and relaxing spaces.",affiliateUrl:"https://www.amazon.in/HashWOW-Changing-Rechargeable-Beautiful-Lighting/dp/B0CWRZS5RB?crid=3SMODXNS0CU7D&dib=eyJ2IjoiMSJ9.m3bGXBNyr9fNCJY_oWYNhupgAX40Jl2oNTSL5gMaq7YLCxbSB8sUcjlyM4yldgpw-NkFOZDQWkTa0nXSqzj6zSrTt_00MBFn4OT_7l7PwpVt_JEZiJOMKyxjlbFCqeuc7IRLHSKP1CP6O4CaZe5MRxfqc3FFksdbAIKDUWDACQ4tnVJ-Jx1iRUrlDuL0pcX0Zw1Ot8BJCs96nRcyWnMNz7N3dC1b7uZ0zbT1BbmcVwGcaJnGDCfbRK7eqb_z_eXZfGwB89IepI9oTLz51z39YhXhnJZgDgAg9N0mcLyqgQ.QVyh-yh56k6Wg4q2wJN5W2Y8tp1PA9J2S_lScdZ1gyA&dib_tag=se&keywords=Levitating%2Bmoon%2Blamp&qid=1788535680&sprefix=levitating%2Bmoon%2Blamp%2Caps%2C523&sr=8-25&th=1&linkCode=ll2&tag=shaland-21&linkId=421ae17363c4e71b838164e169ded83a&ref_=as_li_ss_tl",pros:["Eye-catching moon design","Warm ambient lighting","Great for bedroom decor","Unique gift idea"],cons:["Mainly suited for ambience and decoration"],verdict:"A visually striking decor piece that can instantly make a bedroom or desk feel warmer and more atmospheric.",retailer:"Amazon"}
+{id:10,name:"HashWOW Levitating Moon Lamp",category:"home",bestFor:"Bedroom ambience & decor",rating:4.0,price:"Check current price",badge:"✨ Trending Pick",image:"images/levitating-moon-lamp.jpg",description:"Bring a magical glow to your room with this eye-catching moon lamp. Its moon-inspired design creates a warm, cozy ambience for bedrooms, desks and relaxing spaces.",affiliateUrl:"https://www.amazon.in/HashWOW-Changing-Rechargeable-Beautiful-Lighting/dp/B0CWRZS5RB?crid=3SMODXNS0CU7D&dib=eyJ2IjoiMSJ9.m3bGXBNyr9fNCJY_oWYNhupgAX40Jl2oNTSL5gMaq7YLCxbSB8sUcjlyM4yldgpw-NkFOZDQWkTa0nXSqzj6zSrTt_00MBFn4OT_7l7PwpVt_JEZiJOMKyxjlbFCqeuc7IRLHSKP1CP6O4CaZe5MRxfqc3FFksdbAIKDUWDACQ4tnVJ-Jx1iRUrlDuL0pcX0Zw1Ot8BJCs96nRcyWnMNz7N3dC1b7uZ0zbT1BbmcVwGcaJnGDCfbRK7eqb_z_eXZfGwB89IepI9oTLz51z39YhXhnJZgDgAg9N0mcLyqgQ.QVyh-yh56k6Wg4q2wJN5W2Y8tp1PA9J2S_lScdZ1gyA&dib_tag=se&keywords=Levitating%2Bmoon%2Blamp&qid=1788535680&sprefix=levitating%2Bmoon%2Blamp%2Caps%2C523&sr=8-25&th=1&linkCode=ll2&tag=shaland-21&linkId=421ae17363c4e71b838164e169ded83a&ref_=as_li_ss_tl",pros:["Eye-catching moon design","Warm ambient lighting","Great for bedroom decor","Unique gift idea"],cons:["Mainly suited for ambience and decoration"],verdict:"A visually striking decor piece that can instantly make a bedroom or desk feel warmer and more atmospheric.",retailer:"Amazon"},
+
+  {id: 11,
+  name: "Modestouze Attires Women’s Indo-Western Maxi Dress",
+  category: "style",
+  bestFor: "Casual outings, parties & festive looks",
+  rating: 4.1,
+  price: "Check current price",
+  badge: "🔥 Trending Fashion Pick",
+  image: "images/indo-western-maxi-dress.jpg",
+  description: "Stylish A-line Indo-Western maxi dress with a flowy silhouette and ethnic-inspired look.",
+  affiliateUrl: "https://www.amazon.in/dp/B0GK9BHGB6?tag=shaland-21",
+  pros: [
+    "Stylish Indo-Western design",
+    "Flowy A-line silhouette",
+    "Suitable for casual and festive occasions",
+    "Budget-friendly fashion pick"
+  ],
+  cons: [
+    "Fit may vary by size",
+    "Colour may differ slightly from images"
+  ],
+  verdict: "A stylish and affordable Indo-Western dress for women looking for a modern ethnic-inspired look.",
+  retailer: "Amazon"
+}
 ];

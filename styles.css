@@ -75,7 +75,7 @@ nav a:hover{color:#6d5dfc}
 
 .product-gallery img{
   width:100%;
-  height:420px;
+  height:300px;
   object-fit:contain;
   display:block;
   border-radius:15px;

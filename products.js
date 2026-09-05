@@ -31,7 +31,7 @@ const PRODUCTS=[
   rating: 4.1,
   price: "Check current price",
   badge: "🔥 Trending Fashion Pick",
-  image: "images/indo-western-maxi-dress.jpg",
+  image: "images/indo-western-maxi-dress-1.jpg",
   description: "Stylish A-line Indo-Western maxi dress with a flowy silhouette and ethnic-inspired look.",
   affiliateUrl: "https://www.amazon.in/dp/B0GK9BHGB6?tag=shaland-21",
   pros: [

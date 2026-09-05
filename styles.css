@@ -73,6 +73,13 @@ nav a:hover{color:#6d5dfc}
 .product-image{height:210px;background:#eef0ff;border-radius:15px;overflow:hidden;position:relative}
 .product-image img{width:100%;height:100%;object-fit:contain;padding:30px}
 
+.product-gallery img{
+  width:100%;
+  height:420px;
+  object-fit:contain;
+  display:block;
+  border-radius:15px;
+}
 .badge{position:absolute;top:10px;left:10px;background:#fff;border-radius:999px;padding:5px 9px;font-size:.65rem;font-weight:1000}
 .card h3{font-size:1.08rem;margin:13px 0 4px}
 .stars{color:#f5a400;font-size:.8rem}
